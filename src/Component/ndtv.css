@@ -1,0 +1,51 @@
+body{
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.newsDiv{
+    /* border: 1px solid red; */
+    margin-top: 0px;
+    display: flex;
+    
+}
+
+.newsItems{
+    /* border :1px solid black; */
+    margin-top: 0px;
+    height: 668px;
+    margin-right: 2px;
+    width: calc(145px*10);
+    animation: scroll 110s linear infinite ; 
+    background-image: url('https://cdn.ndtv.com/common/images/ogndtv.png')
+}
+
+.newsItems h1{
+    color: azure;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
+}
+
+.newsItems p{
+    color: azure;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
+}
+
+.newsItems hr{
+    height:7px;
+    width:40%;
+    margin-left:30px;
+    border-radius: 4px;
+    background-color: white;
+    margin-top: -10px;
+   
+}
+
+@keyframes scroll{
+    0%{transform:translateX(0)}
+    100%{transform:translateX(calc(-1460px*9))}
+}
